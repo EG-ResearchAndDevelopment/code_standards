@@ -1,0 +1,1 @@
+# This repository contains the markdown files that are used as internal coding style guides for Python. Within the Elektro Gorenjska Research and Development department, we use these guides to ensure that our code is consistent and readable.
