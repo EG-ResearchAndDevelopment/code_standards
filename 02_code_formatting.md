@@ -1,8 +1,8 @@
 # 1. Code Formatting
 
-## 1.1. Introduction
+## 1.1. General Formatting
 
-Initially this document was created for the **Python** programming language. It describes the coding style that we use in our projects. The coding style is based on the [PEP8](https://www.python.org/dev/peps/pep-0008/) coding style guide. The document is divided into two parts. The first part describes the code formatting tools that we use and the second part describes the coding style itself.
+Initially this document was created for the **Python** programming language. It describes the coding style that we use in our projects. The coding style is based on the [PEP-8](https://www.python.org/dev/peps/pep-0008/) coding style guide. The document is divided into two parts. The first part describes the code formatting tools that we use and the second part describes the coding style itself.
 
 Python is the main dynamic language used at EG R&D. This style guide is a list of dos and don'ts for Python programs.
 
@@ -10,7 +10,7 @@ Python is the main dynamic language used at EG R&D. This style guide is a list o
 
 Code formatting is the process of transforming source code into a more readable form. It is a common practice to format code before committing it to a shared repository. This ensures that all team members are using the same code style and makes it easier to spot any changes made to the code.
 
-We are using the **YAPF** code formatter for Python. YAPF by default uses PEP8 code style. In order to use it, you need to install it first:
+We are using the **YAPF** code formatter for Python. YAPF by default uses PEP-8 code style. In order to use it, you need to install it first:
 
 ```bash
 pip install yapf

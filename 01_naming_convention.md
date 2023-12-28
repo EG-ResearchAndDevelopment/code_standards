@@ -1,1 +1,55 @@
 # 1. Naming Conventions
+
+## 1.1. General
+
+The naming convention is based on PEP-8. The following is a summary of the naming conventions. For more information, please refer to the [PEP-8](https://www.python.org/dev/peps/pep-0008/) document. 
+* Avoid using names that are too general or too wordy. Strike a good balance between the two.
+* Bad: data_structure, my_list, info_map, dictionary_for_the_purpose_of_storing_data_representing_word_definitions.
+* Good: user_profile, menu_options, word_definitions.
+* Don’t be a jackass and name things “O”, “l”, or “I”.
+* When using CamelCase names, capitalize all letters of an abbreviation (e.g. HTTPServer).
+
+
+### 1.1.1. File names
+
+File names should be **all lowercase** and may include underscores (`_`) or dashes (`-` - html files), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `my_module.py`, `my_module_test.py`, `my_module.html`, `my_module_test.html`
+
+### 1.1.2. Folder names
+
+Folder names should be **all lowercase** and may include underscores (`_`) or dashes (`-` - html files), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `my_folder`, `my_folder_test`, `my_folder.py`, `my_folder_test.html`
+
+### 1.1.3. Variable names
+
+Variable names should be **all lowercase** and may include underscores (`_`), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `my_variable`, `my_variable_test`, `my_variable.py`, `my_variable_test.html`
+
+### 1.1.4. Function names
+
+Function names should be **all lowercase** and may include underscores (`_`), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `my_function`, `my_function_test`, `my_function.py`, `my_function_test.html`
+
+### 1.1.5. Class names
+
+Class names should follow the `UpperCamelCase` convention. Follow the convention that is already used in the template project.
+
+e.g. `MyClass`, `MyClassTest`, `MyClass.py`
+
+### 1.1.6. Enumerations
+
+Enumerations should be all **uppercase** and may include underscores (`_`), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `MY_ENUM`, `MY_ENUM_TEST`
+
+### 1.1.7. Constants
+
+Constants should be avoided if possible but if used it should be all **uppercase** and may include underscores (`_`), but no additional punctuation. Follow the convention that is already used in the template project.
+
+e.g. `MY_CONSTANT`, `MY_CONSTANT_TEST`
+
+
