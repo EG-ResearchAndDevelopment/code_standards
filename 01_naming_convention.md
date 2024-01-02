@@ -9,6 +9,9 @@ The naming convention is based on PEP-8. The following is a summary of the namin
 * Don’t be a jackass and name things “O”, “l”, or “I”.
 * When using CamelCase names, capitalize all letters of an abbreviation (e.g. HTTPServer).
 
+**The main rule of naming convention is consistency.** If you are editing a file, follow the convention that is already used in that file. Additionally, if you are editing a project, follow the convention that is already used in that project.
+
+**THE FILENAMES, FOLDER NAMES, VARIABLE NAMES, FUNCTION NAMES, CLASS NAMES, ENUMERATIONS AND CONSTANTS SHOULD ALWAYS STAND ON THEIR OWN. THEY SHOULD BE DESCRIPTIVE AND SHOULD NOT REQUIRE ADDITIONAL COMMENTS TO EXPLAIN THEMSELVES.**
 
 ### 1.1.1. File names
 

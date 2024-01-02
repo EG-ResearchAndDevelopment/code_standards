@@ -1,12 +1,12 @@
-# 1. Code Formatting
+# Code Formatting
 
-## 1.1. General Formatting
+## 1. General Formatting
 
 Initially this document was created for the **Python** programming language. It describes the coding style that we use in our projects. The coding style is based on the [PEP-8](https://www.python.org/dev/peps/pep-0008/) coding style guide. The document is divided into two parts. The first part describes the code formatting tools that we use and the second part describes the coding style itself.
 
 Python is the main dynamic language used at EG R&D. This style guide is a list of dos and don'ts for Python programs.
 
-### 1.2. CODE FORMATTER of choice
+### 2. CODE FORMATTER of choice
 
 Code formatting is the process of transforming source code into a more readable form. It is a common practice to format code before committing it to a shared repository. This ensures that all team members are using the same code style and makes it easier to spot any changes made to the code.
 
@@ -27,7 +27,7 @@ This commit should be done as often as possible, preferably after every change t
 
 ### **This formatter is only a helpfull tool, it does not replace the need for a good coding style.**
 
-### 1.3. Imports
+### 3. Imports
 
 Imports should be grouped in the following order:
 
@@ -47,7 +47,7 @@ Import each module using the full pathname location of the module.
     from foo.bar.yourmodule import yourfunction
     ```
 
-### 1.4. Line length
+### 4. Line length
 
 Limit all lines to a maximum of 100 characters.
 
@@ -72,13 +72,13 @@ e.g.
         ):
         print(var_one)
 
-### 1.5. Indentation
+### 5. Indentation
 
 Use 4 spaces per indentation level. (This is fixed in YAPF)
 
-### 1.6. Definitions
+### 6. Definitions
 
-#### 1.6.1. Variables definition
+#### 6.1. Variables definition
 
 Variables definitions should have the following format:
 
@@ -92,7 +92,7 @@ Variables definitions should have the following format:
     c = 3
     ```
 
-#### 1.6.2 Function definition
+#### 6.2 Function definition
 
 Function definitions should have the following format:
 
@@ -134,7 +134,7 @@ If the function has many arguments, you can split the arguments into multiple li
         return None
     ```
 
-#### 1.6.3. Class definition
+#### 6.3. Class definition
 
 All classes should have the following format:
 
@@ -213,7 +213,7 @@ All classes should have the following format:
     ```
 
 
-### 1.7. Type annotations
+### 7. Type annotations
 
 You can annotate Python code with type hints according to **PEP-484**, and type-check the code at build time with a type checking tool like pytype.
 
@@ -223,9 +223,9 @@ While type annotations are a great tool, they are not required 100% of the time.
 
 **Output type annotation is not required but is recommended.**
 
-### 1.8. Comments
+### 8. Comments
 
-#### 1.8.1. Function comments
+#### 8.1. Function comments
 
 All functions should have a comment that describes what the function does. The comment should be placed right below the function definition and should have the following format:
 
@@ -248,7 +248,7 @@ All functions should have a comment that describes what the function does. The c
         return None
     ```
 
-#### 1.8.2. Line comments
+#### 8.2. Line comments
 
 Line comments should be used sparingly. They should be used only when it is not possible to describe the code with a function comment or with the code naming convention itself. Line comments should have the following format:
 
@@ -263,7 +263,7 @@ If they are longer they should be split into multiple lines:
     # So it has been split into multiple lines.
     ```
 
-### Return statements
+### 8.3 Return statements
 
 If a function returns a value, it should have a return statement. If the function does not return a value, it should have a `return None` statement at the end. In this case, the function should have a comment that describes what the function does.
 
@@ -282,7 +282,7 @@ If a function returns a value, it should have a return statement. If the functio
         return None
     ```
 
-### 1.9. True and False evaluation
+### 9. True and False evaluation
 
 Do not use the `==` and `!=` operators to compare a value to `True` or `False`.
 
@@ -304,7 +304,7 @@ Do not use the `==` and `!=` operators to compare a value to `True` or `False`.
         # ...
     ```
 
-### 1.10. Parentheses
+### 10. Parentheses
 
 Do not use parentheses around the condition of an `if` statement.
 
@@ -329,11 +329,11 @@ Do not use parantheses around return values.
     return (x)
     ```
 
-### 1.11. Whitespace
+### 11. Whitespace
 
 **White spaces should automatically be handled by YAPF.**
 
-#### 1.11.1. Blank lines
+#### 11.1. Blank lines
 
 Separate top-level function or class definition with two blank lines. And the rest of the code with one blank line.
 
@@ -352,7 +352,7 @@ Separate top-level function or class definition with two blank lines. And the re
         return None
     ```
 
-#### 1.11.2. Blank spaces
+#### 11.2. Blank spaces
 
 Do not use blank spaces around the following:
 
@@ -387,9 +387,9 @@ Surround binary operators with a single space on either side for assignment (`=`
 There should be no trailing whitespace at the end of a line. **This should be automatically handled by YAPF.**
 
 
-### 1.12. Strings
+### 12. Strings
 
-#### 1.12.1. Single quotes
+#### 12.1. Single quotes
 
 Use single quotes (`'`) for strings.
 
@@ -401,7 +401,7 @@ Use single quotes (`'`) for strings.
     string = 'This is a string.'
     ```
 
-#### 1.12.2. String concatenation
+#### 12.2. String concatenation
 
 Use the `+` operator for string concatenation.
 
@@ -413,7 +413,7 @@ Use the `+` operator for string concatenation.
     string = 'This is a string.' + 'This is another string.'
     ```
 
-#### 1.12.3. String formatting
+#### 12.3. String formatting
 
 Use the `f-string` for string formatting.
 
