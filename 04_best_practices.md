@@ -4,9 +4,9 @@
 
 First of all the first three sections:
 
-* [01 - Naming Conventions](01_naming_conventions.md)
-* [02 - Code Organisation](02_code_organisation.md)
-* [03 - Code Style](03_code_style.md)
+* [01 - Naming Conventions](01_naming_convention.md)
+* [02 - Code Formatting](02_code_formatting.md)
+* [03 - Code Organisation](03_code_organisation.md)
 
 are supposed to serve as guidelines for all the projects. Some of the elements are mandatory, some are optional. These guidelines are not set in stone, but they are a good starting point for all the projects.
  
