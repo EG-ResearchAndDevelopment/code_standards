@@ -15,15 +15,17 @@ The naming convention is based on PEP-8. The following is a summary of the namin
 
 ### 1.1.1. File names
 
-File names should be **all lowercase** and may include underscores (`_`) or dashes (`-` - html files), but no additional punctuation. Follow the convention that is already used in the template project.
+File names should be **all lowercase** and may include underscores (`_`) or dashes (`-`), but no additional punctuation. We prefer `_` Follow the convention that is already used in the template project.
 
-e.g. `my_module.py`, `my_module_test.py`, `my_module.html`, `my_module_test.html`
+e.g. `my_module.py`, `my_module_test.py`, `my_class_name.py`, `my_module_test.html`
 
 ### 1.1.2. Folder names
 
-Folder names should be **all lowercase** and may include underscores (`_`) or dashes (`-` - html files), but no additional punctuation. Follow the convention that is already used in the template project.
+Folder names should be **all lowercase** and may include underscores (`_`) or dashes (`-`), but no additional punctuation. Follow the convention that is already used in the template project.
 
-e.g. `my_folder`, `my_folder_test`, `my_folder.py`, `my_folder_test.html`
+e.g. `my_folder`, `my_folder_test`
+
+The name of the repository should only include `-` between the words and should not include spaces ` ` or underscores `_`.
 
 ### 1.1.3. Variable names
 
@@ -35,13 +37,13 @@ e.g. `my_variable`, `my_variable_test`, `my_variable.py`, `my_variable_test.html
 
 Function names should be **all lowercase** and may include underscores (`_`), but no additional punctuation. Follow the convention that is already used in the template project.
 
-e.g. `my_function`, `my_function_test`, `my_function.py`, `my_function_test.html`
+e.g. `my_function`, `my_function_test`
 
 ### 1.1.5. Class names
 
 Class names should follow the `UpperCamelCase` convention. Follow the convention that is already used in the template project.
 
-e.g. `MyClass`, `MyClassTest`, `MyClass.py`
+e.g. `MyClass`, `MyClassTest`
 
 ### 1.1.6. Enumerations
 
