@@ -21,9 +21,11 @@ e.g. `my_module.py`, `my_module_test.py`, `my_module.html`, `my_module_test.html
 
 ### 1.1.2. Folder names
 
-Folder names should be **all lowercase** and may include underscores (`_`) or dashes (`-` - html files), but no additional punctuation. Follow the convention that is already used in the template project.
+Folder names should be **all lowercase** and may include underscores (`_`) or dashes (`-`), but no additional punctuation. Follow the convention that is already used in the template project.
 
-e.g. `my_folder`, `my_folder_test`, `my_folder.py`, `my_folder_test.html`
+e.g. `my_folder`, `my_folder_test`
+
+The name of the repository should only include `-` between the words and should not include spaces ` ` or underscores `_`.
 
 ### 1.1.3. Variable names
 
