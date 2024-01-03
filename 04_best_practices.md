@@ -18,7 +18,7 @@ The testing process is a very important part of the development process. In R&D 
 
 * **Unit testing** - To use unit testing, the code should be written in a way that allows it. The code should be written in small, testable units. The unit tests should be written before the code is written. The unit tests should be written in a way that allows them to be run automatically.
 
-To run unit tests take a look at the [Unit Testing](../unit_testing/README.md) section.
+To run unit tests take a look at the [Unit Testing](05_unit_testing.md) section.
 
 ## 3. Documentation
 
