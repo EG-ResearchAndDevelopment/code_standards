@@ -8,7 +8,7 @@ D.R.Y. Code (Don’t Repeat Yourself). If you find yourself writing the same cod
 The structure is flexible but should follow the following overall structure. The project root directory should be named after the project itself, and should be the git repo root directory:
 
 * `{project_root}` (name of the project)
-   * `src`
+   * **`src`**
         * **`notebooks`**
         * *`(tests)`*
         * *`(models)`* - not mandatory but highly recomended for more complex projects

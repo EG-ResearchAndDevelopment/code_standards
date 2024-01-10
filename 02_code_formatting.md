@@ -117,6 +117,8 @@ Function definitions should have the following format:
         return None
     ```
 
+When the function is a `__init__` then the `Args:` should be renamed to `Attributes:`.
+
 **Be careful of the last comma in the argument list. as it is required for YAPF to work properly.**
 If the function has many arguments, you can split the arguments into multiple lines. In this case, the closing parenthesis should be on a separate line.
 
@@ -146,8 +148,7 @@ All classes should have the following format:
         """
 
         def __init__(self, arg1: int, arg2: str,) -> None:
-            """INIT function description.
-
+            """
             Attributes:
             ----------
                 arg1: int
@@ -260,7 +261,7 @@ If they are longer they should be split into multiple lines:
 
     ```python
     # This is a comment that is too long to fit on a single line.
-    # So it has been split into multiple lines.
+    # so it has been split into multiple lines.
     ```
 
 ### 8.3 Return statements
@@ -343,6 +344,7 @@ Separate top-level function or class definition with two blank lines. And the re
     import os
     import sys
 
+
     def function1():
         # ...
         return None
@@ -419,15 +421,15 @@ Use the `f-string` for string formatting.
 
     ```python
     Yes: x = f'name: {name}; score: {n}'
-         x = '%s, %s!' % (imperative, expletive)
          x = '{}, {}'.format(first, second)
-         x = 'name: %s; score: %d' % (name, n)
-         x = 'name: %(name)s; score: %(score)d' % {'name':name, 'score':n}
-         x = 'name: {}; score: {}'.format(name, n)
-         x = a + b
+
      
     No: x = first + ', ' + second
         x = 'name: ' + name + '; score: ' + str(n)
+         x = '%s, %s!' % (imperative, expletive)
+         x = 'name: %s; score: %d' % (name, n)
+         x = 'name: %(name)s; score: %(score)d' % {'name':name, 'score':n}
+         x = a + b
 
     ```
 
