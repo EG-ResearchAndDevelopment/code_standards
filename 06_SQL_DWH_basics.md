@@ -20,7 +20,7 @@ SOM tables indicate that the measurements are on the transformator level and NMC
 - FactKrivuljeNMC will have measurements of metering points
 - FactKrivuljeSOM will have measurements of transformator stations
 
-in some cases we can also see DimDogodekStevec where stevec means metering point but we have a different table DimDogodekSOM for transformator stations events.
+In some cases we can also see DimDogodekStevec where stevec means metering point but we have a different table DimDogodekSOM for transformator stations events.
 
 ## 4. Understanding DimMerilnoMesto Table
 

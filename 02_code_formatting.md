@@ -29,7 +29,7 @@ This commit should be done as often as possible, preferably after every change t
 
 #### 2.1 Format with saving your file
 
-In VSC settings we can also select the "Editor: Format on Save" option to enable auto formating on when we save our file.
+In VSC settings we can also select the `"Editor: Format on Save"` option to enable auto formating on when we save our file.
 
 ![Alt text](screenshots/on_save.png)
 
