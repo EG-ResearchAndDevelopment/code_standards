@@ -8,7 +8,7 @@ First of all the first three sections:
 * [02 - Code Formatting](02_code_formatting.md)
 * [03 - Code Organisation](03_code_organisation.md)
 
-are supposed to serve as guidelines for all the projects. Some of the elements are mandatory, some are optional. These guidelines are not set in stone, but they are a good starting point for all the projects.
+Are supposed to serve as guidelines for all the projects. Some of the elements are mandatory, some are optional. These guidelines are not set in stone, but they are a good starting point for all the projects.
  
 The following sections present the coding process and the other good practices that should be followed and are within the R&D department guidelines.
 
@@ -20,14 +20,16 @@ The testing process is a very important part of the development process. In R&D 
 
 To run unit tests take a look at the [Unit Testing](05_unit_testing.md) section.
 
+We commit to do at least 2 unit tests for each function. 
+
 ## 3. Documentation
 
 The documentation is not mandatory for R&D projects - prototyping, but when developing an application that will be run in production it has to be done. The documentation should be done in the following order:
 
 **Code documentation** - The code should be documented in the following manner:
-    * **File documentation** - Each file should have documentation that describes the purpose of the file and the contents of the file. 
-    * **Function documentation** - Each function should have documentation that describes the purpose of the function and the parameters of the function. The documentation should also describe the return value of the function.
-    * **Class documentation** - Each class should have documentation that describes the purpose of the class and the contents of the class. The documentation should also describe the methods of the class.
+* **File documentation** - Each file should have documentation that describes the purpose of the file and the contents of the file. 
+* **Function documentation** - Each function should have documentation that describes the purpose of the function and the parameters of the function. The documentation should also describe the return value of the function.
+* **Class documentation** - Each class should have documentation that describes the purpose of the class and the contents of the class. The documentation should also describe the methods of the class.
 
 
 ## 4. Version Control
