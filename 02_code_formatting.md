@@ -33,7 +33,7 @@ In VSC settings we can also select the `"Editor: Format on Save"` option to enab
 
 ![Alt text](screenshots/on_save.png)
 
-#### 2.1 Set default formater
+#### 2.2 Set default formater
 
 To set up the default formater you can press `Ctrl + Shift + P` and type `format` or under vsc settings
 
