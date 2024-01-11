@@ -27,11 +27,17 @@ yapf -i -r .
 This command will run the YAPF formatter recursively on all files in the current directory and its subdirectories.
 This commit should be done as often as possible, preferably after every change to the code.
 
-#### 2.1 Format with saving your file
+#### 2.1 Format on save
 
 In VSC settings we can also select the `"Editor: Format on Save"` option to enable auto formating on when we save our file.
 
 ![Alt text](screenshots/on_save.png)
+
+#### 2.1 Set default formater
+
+To set up the default formater you can press `Ctrl + Shift + P` and type `format` or under vsc settings
+
+![Alt text](screenshots/default_formater.png)
 
 ### **This formatter is only a helpfull tool, it does not replace the need for a good coding style.**
 
