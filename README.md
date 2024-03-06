@@ -13,5 +13,6 @@ This repo consists of the following sections:
 - [05 - Unit Testing](05_unit_testing.md)
 - [06 - SQL DWH Basics](06_SQL_DWH_basics.md)
 - [07 - Unit Testing](07_SQL_naming_convention.md)
+- [08 - Base Names](08_base_names.md)
 
 The guidelines are a simplified version of Google's Python Style Guide. The original guide can be found [here](https://google.github.io/styleguide/pyguide.html).
