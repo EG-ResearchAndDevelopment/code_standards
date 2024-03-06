@@ -12,7 +12,7 @@
 | Napetost 1 | u_1 |
 | Napetost 2 | u_2 |
 | Napetost 3 | u_3 |
-| Energija | a |
+| Delovna energija | a |
 | Transformator | tr |
 | TransformatorskaPostaja | tp |
 | Izvod | feeder |
