@@ -61,6 +61,19 @@ Import each module using the full pathname location of the module.
     from foo.bar.yourmodule import yourfunction
     ```
 
+You can use `isort` command to automatically sort your imports. you can install it using the following command:
+
+```bash
+pip install isort
+```
+
+if you want to sort your imports you can run the following command (this will sort all the imports in the current directory and its subdirectories):
+
+```bash
+isort .
+isort file.py
+```
+
 ### 4. Line length
 
 Limit all lines to a maximum of 100 characters.
