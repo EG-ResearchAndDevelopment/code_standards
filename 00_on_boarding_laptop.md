@@ -32,7 +32,7 @@ The Software Center includes:
 3. Install all programs in `C:\Programi\` and check "ADD to path" during Python installation. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
 
 ![Python Add to Path](screenshots\python_setup.png)
-![Environment Variables](screenshots\anaconda_setup.png)
+![Environment Variables](screenshots/anaconda_setup.png)
 
 
 ## Running Code
