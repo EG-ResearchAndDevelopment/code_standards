@@ -31,7 +31,7 @@ The Software Center includes:
 2. Use the username (AD\Workstationadmin) and password during installation when prompted for credentials. If the installation doesn't start, right-click > Run as Administrator.
 3. Install all programs in `C:\Programi\` and check "ADD to path" during Python installation. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
 
-![Python Add to Path](screenshots\python_setup.png)
+![Python Add to Path](screenshots/python_setup.png)
 ![Environment Variables](screenshots/anaconda_setup.png)
 
 
