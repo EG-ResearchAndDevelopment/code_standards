@@ -6,6 +6,7 @@ The repository is organised in the follwoing manner:
 
 This repo consists of the following sections:
 
+- [00 - On Boarding](00_on_boarding_laptop.md)
 - [01 - Naming Conventions](01_naming_convention.md)
 - [02 - Code Formatting](02_code_formatting.md)
 - [03 - Code Organisation](03_code_organisation.md)
