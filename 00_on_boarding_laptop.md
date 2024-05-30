@@ -70,7 +70,7 @@ pkgs_dirs:
 
 ![condarc sys variable](<screenshots\condarc_sys_var.png>)
 
-5. Firstly run ```conda init``` in powershell CLI , create test environment with ```conda create --name test_env```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
+5. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
 
 ## Running Code
 
