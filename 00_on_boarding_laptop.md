@@ -34,8 +34,8 @@ The Software Center includes:
 3. Install all programs in `C:\Programi\`, select to install for all users and check "ADD to path" where it is possible. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
 
 
-![Python Add to Path](<screenshots\python_setup.png>)
-![Environment Variables](<screenshots\anaconda_setup.png>)
+![Python Add to Path](screenshots\python_setup.png)
+![Environment Variables](screenshots\anaconda_setup.png)
 
 ## Anaconda configuration
 
@@ -50,7 +50,7 @@ After the installation you have to complete the following steps:
 * C:\Programi\anaconda\Library\bin
 * C:\Programi\anaconda\python.exe
 
-![Anaconda Add to Path](<screenshots\conda_system_variables.png>)
+![Anaconda Add to Path](screenshots\conda_system_variables.png)
 
 2. Add additional rights to your C:\Programi\anaconda folder (Right-click on the folder > properties > security tab) read/write and change/execute - the ones under full contol
 
@@ -64,11 +64,11 @@ envs_dirs:
 pkgs_dirs:
   - C:\Programi\anaconda\pkgs
 ``` 
-![condarc](<screenshots\condarc.png>)
+![condarc](screenshots\condarc.png)
 
 4. Add condarc as a system variable into system variables as in the pitcure below 
 
-![condarc sys variable](<screenshots\condarc_sys_var.png>)
+![condarc sys variable](screenshots\condarc_sys_var.png)
 
 5. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
 
@@ -79,7 +79,7 @@ Add The following PATH-s into your system variables (Urejanje spremenljivk delov
  * C:\Programi\Git\bin
  * C:\Programi\Git\cmd
 
-![git config](<screenshots\git_config.png>)
+![git config](screenshots\git_config.png)
 
 ## Running Code
 
