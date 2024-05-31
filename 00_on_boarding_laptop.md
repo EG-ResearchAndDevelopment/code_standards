@@ -72,6 +72,15 @@ pkgs_dirs:
 
 5. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
 
+## Git configuration
+
+Add The following PATH-s into your system variables (Urejanje spremenljivk delovnega okolja):
+
+ * C:\Programi\Git\bin
+ * C:\Programi\Git\cmd
+
+![git config](<screenshots\git_config.png>)
+
 ## Running Code
 
 Run the code in a folder that is not on OneDrive; otherwise, you will get an error stating that you do not have access in the terminal. We suggest `C:\Programi\projects`.
