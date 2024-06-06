@@ -52,9 +52,11 @@ After the installation you have to complete the following steps:
 
 ![Anaconda Add to Path](screenshots/conda_system_variables.png)
 
-2. Add additional rights to your C:\Programi\anaconda folder (Right-click on the folder > properties > security tab) read/write and change/execute - the ones under full contol
+2. Move all the paths to the top as seen on the picture above.
 
-3. Open C:\Programi\anaconda folder in your vscode and in etc > conda create 'condarc' file which serves as a global configuration file for your computer. Paste the following files into the file:
+3. Add additional rights to your C:\Programi\anaconda folder (Right-click on the folder > properties > security tab) read/write and change/execute - the ones under full contol
+
+4. Open C:\Programi\anaconda folder in your vscode and in etc > conda create 'condarc' file which serves as a global configuration file for your computer. Paste the following files into the file:
 
 ```
 channels:
@@ -66,11 +68,11 @@ pkgs_dirs:
 ``` 
 ![condarc](screenshots/condarc.png)
 
-4. Add CONDARC as a system variable into system variables as in the picture below 
+5. Add CONDARC as a system variable into system variables as in the picture below 
 
 ![condarc sys variable](screenshots/condarc_sys_var.png)
 
-5. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
+6. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
 
 ## Git configuration
 
