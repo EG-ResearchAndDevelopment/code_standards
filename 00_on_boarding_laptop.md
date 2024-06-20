@@ -19,19 +19,29 @@ The Software Center includes:
 - Adobe Acrobat, for PDFs
 - 7-Zip, for zip files
 
+## Web applications used:
+
+We use different web applications like:
+- monday.com
+- ChatGPT
+- Medium
+
 ## Already Installed
 
 - Microsoft Office
 - Microsoft Outlook
-- Microsoft Teams
+- Microsoft Teams (for teams you need to be added to additional groups of our worklpace like RD EG by Blaž, there are also documents of our projects)
 
 ## Installation
 
-###### Disclaimer: Most likely you will still have to add all the PATH-s into system variables manually!
+###### Disclaimer: Most likely you will still have to add all the PATH-s into system variables manually! 
+
 
 1. Request administrative access via the user support portal or contact Rok Andolšek/Ares Osrednikar on Microsoft Teams.
 2. Use the username (AD\Workstationadmin) and password during installation when prompted for credentials. If the installation doesn't start, right-click > Run as Administrator.
-3. Install all programs in `C:\Programi\` for anaconda create a folder anaconda `C:\Programi\anaconda` before or during the installation because the installer will say that the folder is not empty, select to install for all users and check "ADD to path" where it is possible. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
+###### If by any chance you do not recieve the question for the admin log in by windows while running an setup you migh have to log into your laptop with the Admin user and password to change some right.
+
+3. Install all programs in `C:\Programi\` for anaconda create a folder anaconda `C:\Programi\anaconda` before or during the installation because the installer will say that the folder is not empty, select to install for ALL USERS and check "ADD to path" where it is possible. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
 
 
 ![Python Add to Path](screenshots\python_setup.png)
