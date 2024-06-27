@@ -16,6 +16,7 @@
 | Transformator | tr |
 | TransformatorskaPostaja | tp |
 | Izvod | feeder |
+| PriključnaOmarica | connection_cabinet |
 | MerilnoMesto | metering_point |
 | Nazivna Moč | installed_power |
 | Nazivna Napetost | nominal_voltage |
