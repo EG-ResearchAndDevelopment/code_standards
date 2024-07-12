@@ -13,6 +13,7 @@
 | Napetost 2 | u_2 |
 | Napetost 3 | u_3 |
 | Delovna energija | a |
+| Jalova energija | r |
 | Transformator | tr |
 | TransformatorskaPostaja | tp |
 | Izvod | feeder |
