@@ -69,6 +69,11 @@ OK
 
 ```
 
+You can also simplify the command and use `pytest`:
+```bash
+$ pytest <directory_to_tests>
+```
+
 Some more examples can be found in the library consmodel [here](https://github.com/blazdob/consmodel).
 
 ## 3. Running the tests
