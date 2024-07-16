@@ -14,6 +14,8 @@ The tests should be written in the following manner:
 
 * **Test function** - Each test function should be named after the function that is being tested. The test function should be placed in the same directory as the file that is being tested. The test function should be named in the following manner: `test_<function_name>`.
 
+If there are multiple `*.py` files to be tested in the same directory, then all `test_<file_name>.py` files should be placed in one folder named tests. 
+
 ### 2.1. Example
 
 Let's say we have a file called `my_module.py` with the following content:
