@@ -74,7 +74,7 @@ Test new ideas or features here before merging into `develop`.
     - `feature/feature-name`
 - Use hyphens to separate words and avoid special characters.
 
-![alt text](image.png)
+![alt text](screenshots/git_branches.png)
 
 4. **Code Standards:**
 - Depending on the branch, the code standards may vary.
