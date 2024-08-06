@@ -9,7 +9,7 @@ This repo contains output conventions for various project types. They aim to pro
 
 ---
 
-## Output Convention
+## Time series analysis
 
 Infference of a time series model should be presented in the following format:
 
