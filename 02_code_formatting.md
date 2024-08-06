@@ -51,15 +51,15 @@ Imports should be grouped in the following order:
 
 Import each module using the full pathname location of the module.
 
-    ```python
-    import os
-    import sys
+```python
+import os
+import sys
 
-    from foo.bar import baz
-    from foo.bar import Quux
+from foo.bar import baz
+from foo.bar import Quux
 
-    from foo.bar.yourmodule import yourfunction
-    ```
+from foo.bar.yourmodule import yourfunction
+```
 
 You can use `isort` command to automatically sort your imports. you can install it using the following command:
 
@@ -86,19 +86,20 @@ The following examptions are allowed:
 
 e.g.
 
-    ```python
-    # No: Aligned with opening delimiter.
-    foo = long_function_name(var_one, var_two,
-                             var_three, var_four)
+```python
+# No: Aligned with opening delimiter.
+foo = long_function_name(var_one, var_two,
+                            var_three, var_four)
 
-    # Yes: Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.
-    def long_function_name(
-            var_one,
-            var_two,
-            var_three,
-            var_four
-        ):
-        print(var_one)
+# Yes: Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.
+def long_function_name(
+        var_one,
+        var_two,
+        var_three,
+        var_four
+    ):
+    print(var_one)
+```
 
 ### 5. Indentation
 
@@ -110,22 +111,100 @@ Use 4 spaces per indentation level. (This is fixed in YAPF)
 
 Variables definitions should have the following format:
 
-    ```python
-    # No:
-    a, b, c = 1, 2, 3
+```python
+# No:
+a, b, c = 1, 2, 3
 
-    # Yes:
-    a = 1
-    b = 2
-    c = 3
-    ```
+# Yes:
+a = 1
+b = 2
+c = 3
+```
 
 #### 6.2 Function definition
 
 Function definitions should have the following format:
 
-    ```python
-    def function_name(arg1: int, arg2: str,) -> None:
+```python
+def function_name(arg1: int, arg2: str,) -> None:
+    """One-line description of what this function does.
+
+    Longer description of the function.
+
+    Args:
+    ----------
+        arg1: int
+            Description of arg1.
+        arg2: str:
+            Description of arg2.
+
+    Returns:
+    ----------
+        Description of return value.
+    """
+    # ...
+    return None
+```
+
+**Be careful of the last comma in the argument list. as it is required for YAPF to work properly.**
+If the function has many arguments, you can split the arguments into multiple lines. In this case, the closing parenthesis should be on a separate line.
+
+```python
+def function_name(
+    arg1: int,
+    arg2: str,
+    arg3: float,
+    arg4: bool,
+) -> None:
+"""
+....
+"""
+    # ...
+    return None
+```
+
+#### 6.3. Class definition
+
+All classes should have the following format:
+
+```python
+class ClassName:
+    """One-line description of what this class does.
+
+    Longer description of the class.
+    """
+
+    def __init__(self, arg1: int, arg2: str,) -> None:
+        """INIT function description.
+
+        Attributes:
+        ----------
+            arg1: int
+                Description of arg1.
+            arg2: str
+                Description of arg2.
+        """
+        # ...
+
+    @setter
+    def attr1(self, value: int) -> None:
+        # ...
+
+    @getter
+    def attr1(self) -> int:
+        # ...
+        return None
+
+    @setter
+    def attr2(self, value: str) -> None:
+        # ...
+
+    @getter
+    def attr2(self) -> str:
+        # ...
+        return None
+
+    def method_name(self, arg1: int, arg2: str,) -> None:
         """One-line description of what this function does.
 
         Longer description of the function.
@@ -134,7 +213,7 @@ Function definitions should have the following format:
         ----------
             arg1: int
                 Description of arg1.
-            arg2: str:
+            arg2: str
                 Description of arg2.
 
         Returns:
@@ -142,103 +221,25 @@ Function definitions should have the following format:
             Description of return value.
         """
         # ...
-        return None
-    ```
 
-**Be careful of the last comma in the argument list. as it is required for YAPF to work properly.**
-If the function has many arguments, you can split the arguments into multiple lines. In this case, the closing parenthesis should be on a separate line.
+    @classmethod
+    def class_method_name(cls, arg1: int, arg2: str,) -> str:
+        """One-line description of what this function does.
 
-    ```python
-    def function_name(
-        arg1: int,
-        arg2: str,
-        arg3: float,
-        arg4: bool,
-    ) -> None:
-    """
-    ....
-    """
-        # ...
-        return None
-    ```
+        Longer description of the function.
 
-#### 6.3. Class definition
+        Args:
+        ----------
+            arg1: Description of arg1.
+            arg2: Description of arg2.
 
-All classes should have the following format:
-
-    ```python
-    class ClassName:
-        """One-line description of what this class does.
-
-        Longer description of the class.
+        Returns:
+        ----------
+            Description of return value.
         """
-
-        def __init__(self, arg1: int, arg2: str,) -> None:
-            """INIT function description.
-
-            Attributes:
-            ----------
-                arg1: int
-                    Description of arg1.
-                arg2: str
-                    Description of arg2.
-            """
-            # ...
-
-        @setter
-        def attr1(self, value: int) -> None:
-            # ...
-
-        @getter
-        def attr1(self) -> int:
-            # ...
-            return None
-
-        @setter
-        def attr2(self, value: str) -> None:
-            # ...
-
-        @getter
-        def attr2(self) -> str:
-            # ...
-            return None
-
-        def method_name(self, arg1: int, arg2: str,) -> None:
-            """One-line description of what this function does.
-
-            Longer description of the function.
-
-            Args:
-            ----------
-                arg1: int
-                    Description of arg1.
-                arg2: str
-                    Description of arg2.
-
-            Returns:
-            ----------
-                Description of return value.
-            """
-            # ...
-
-        @classmethod
-        def class_method_name(cls, arg1: int, arg2: str,) -> str:
-            """One-line description of what this function does.
-
-            Longer description of the function.
-
-            Args:
-            ----------
-                arg1: Description of arg1.
-                arg2: Description of arg2.
-
-            Returns:
-            ----------
-                Description of return value.
-            """
-            # ...
-            return "None"
-    ```
+        # ...
+        return "None"
+```
 
 ### 7. Type annotations
 
@@ -256,106 +257,106 @@ While type annotations are a great tool, they are not required 100% of the time.
 
 All functions should have a comment that describes what the function does. The comment should be placed right below the function definition and should have the following format:
 
-    ```python
-    def function_name(arg1: int, arg2: str,) -> None:
-        """One-line description of what this function does.
+```python
+def function_name(arg1: int, arg2: str,) -> None:
+    """One-line description of what this function does.
 
-        Longer description of the function.
+    Longer description of the function.
 
-        Args:
-        ----------
-            arg1: Description of arg1.
-            arg2: Description of arg2.
+    Args:
+    ----------
+        arg1: Description of arg1.
+        arg2: Description of arg2.
 
-        Returns:
-        ----------
-            Description of return value.
-        """
-        # ...
-        return None
-    ```
+    Returns:
+    ----------
+        Description of return value.
+    """
+    # ...
+    return None
+```
 
 #### 8.2. Line comments
 
 Line comments should be used sparingly. They should be used only when it is not possible to describe the code with a function comment or with the code naming convention itself. Line comments should have the following format:
 
-    ```python
-    # This is a comment.
-    ```
+```python
+# This is a comment.
+```
 
 If they are longer they should be split into multiple lines:
 
-    ```python
-    # This is a comment that is too long to fit on a single line.
-    # So it has been split into multiple lines.
-    ```
+```python
+# This is a comment that is too long to fit on a single line.
+# So it has been split into multiple lines.
+```
 
 ### 8.3 Return statements
 
 If a function returns a value, it should have a return statement. If the function does not return a value, it should have a `return None` statement at the end. In this case, the function should have a comment that describes what the function does.
 
-    ```python
-    def function_name(arg1: int, arg2: str,) -> None:
-        """One-line description of what this function does.
+```python
+def function_name(arg1: int, arg2: str,) -> None:
+    """One-line description of what this function does.
 
-        Longer description of the function.
+    Longer description of the function.
 
-        Args:
-        ----------
-            arg1: Description of arg1.
-            arg2: Description of arg2.
-        """
-        # ...
-        return None
-    ```
+    Args:
+    ----------
+        arg1: Description of arg1.
+        arg2: Description of arg2.
+    """
+    # ...
+    return None
+```
 
 ### 9. True and False evaluation
 
 Do not use the `==` and `!=` operators to compare a value to `True` or `False`.
 
-    ```python
-    # No:
-    if greeting == True:
-        # ...
+```python
+# No:
+if greeting == True:
+    # ...
 
-    # Yes:
-    if greeting:
-        # ...
+# Yes:
+if greeting:
+    # ...
 
-    # No:
-    if greeting != True:
-        # ...
+# No:
+if greeting != True:
+    # ...
 
-    # Yes:
-    if not greeting:
-        # ...
-    ```
+# Yes:
+if not greeting:
+    # ...
+```
 
 ### 10. Parentheses
 
 Do not use parentheses around the condition of an `if` statement.
 
-    ```python
-    # No:
-    if (x > 0):
-        # ...
+```python
+# No:
+if (x > 0):
+    # ...
 
-    # Yes:
-    if x > 0:
-        # ...
-    ```
+# Yes:
+if x > 0:
+    # ...
+```
 
 Do not use parantheses around return values.
 
-    ```python
-    # Yes:
-    return x
-    return x, y
-    return (x, y)
+```python
+# Yes:
+return x
+return x, y
+return (x, y)
 
-    # No:
-    return (x)
-    ```
+# No:
+return (x)
+```
 
 ### 11. Whitespace
 
@@ -365,20 +366,20 @@ Do not use parantheses around return values.
 
 Separate top-level function or class definition with two blank lines. And the rest of the code with one blank line.
 
-    ```python
+```python
 
-    #START OF THE FILE
-    import os
-    import sys
+#START OF THE FILE
+import os
+import sys
 
-    def function1():
-        # ...
-        return None
+def function1():
+    # ...
+    return None
 
-    def function2():
-        # ...
-        return None
-    ```
+def function2():
+    # ...
+    return None
+```
 
 #### 11.2. Blank spaces
 
@@ -392,23 +393,23 @@ Do not use blank spaces around the following:
 6. Immediately before the open parenthesis that starts a dictionary.
 7. Immediately before the open parenthesis that starts an argument list, indexing, slicing, or tuple.
 
-   ```python
-   # No:
-   spam( ham[ 1 ], { eggs: 2 } )
+```python
+# No:
+spam( ham[ 1 ], { eggs: 2 } )
 
-   # Yes:
-   spam(ham[1], {eggs: 2})
-   ```
+# Yes:
+spam(ham[1], {eggs: 2})
+```
 
 Surround binary operators with a single space on either side for assignment (`=`), comparisons (`==, <, >, !=, <>, <=, >=, in, not in, is, is not`), and Booleans (`and, or, not`). Use your better judgment for the insertion of spaces around arithmetic operators (`+, -, *, /, //, %, **, @`). **We prefer to put a single space around these operators as well.**
 
-    ```python
-    # No:
-    x=y+1
+```python
+# No:
+x=y+1
 
-    # Yes:
-    x = y + 1
-    ```
+# Yes:
+x = y + 1
+```
 
 There should be no trailing whitespace at the end of a line. **This should be automatically handled by YAPF.**
 
@@ -416,44 +417,44 @@ There should be no trailing whitespace at the end of a line. **This should be au
 
 #### 12.1. Single quotes
 
-Use single quotes (`'`) for strings.
+Use double quotes (`"`) for strings.
 
-    ```python
-    # No:
-    string = "This is a string."
+```python
+# No:
+string = "This is a string."
 
-    # Yes:
-    string = 'This is a string.'
-    ```
+# Yes:
+string = 'This is a string.'
+```
 
 #### 12.2. String concatenation
 
 Use the `+` operator for string concatenation.
 
-    ```python
-    # No:
-    string = 'This is a string.' 'This is another string.'
+```python
+# No:
+string = "This is a string." "This is another string."
 
-    # Yes:
-    string = 'This is a string.' + 'This is another string.'
-    ```
+# Yes:
+string = "This is a string." + "This is another string."
+```
 
 #### 12.3. String formatting
 
 Use the `f-string` for string formatting.
 
-    ```python
-    Yes: x = f'name: {name}; score: {n}'
-         x = '%s, %s!' % (imperative, expletive)
-         x = '{}, {}'.format(first, second)
-         x = 'name: %s; score: %d' % (name, n)
-         x = 'name: %(name)s; score: %(score)d' % {'name':name, 'score':n}
-         x = 'name: {}; score: {}'.format(name, n)
-         x = a + b
+```python
+Yes: x = f"name: {name}; score: {n}"
+        x = "%s, %s!" % (imperative, expletive)
+        x = "{}, {}".format(first, second)
+        x = "name: %s; score: %d" % (name, n)
+        x = "name: %(name)s; score: %(score)d" % {"name":name, "score":n}
+        x = "name: {}; score: {}".format(name, n)
+        x = a + b
 
-    No: x = first + ', ' + second
-        x = 'name: ' + name + '; score: ' + str(n)
+No: x = first + ", " + second
+    x = "name: " + name + "; score: " + str(n)
 
-    ```
+```
 
 ### TODO - Any more formatting questions or rules that you would like to add?
