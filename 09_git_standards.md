@@ -151,7 +151,8 @@ The `main` branch should have the highest standards, while the `research` branch
 
 2. **Sensitive Data:**
 - Never commit sensitive information such as passwords or API keys.
-- Use GitHub's secret management tools for handling sensitive data with GitHub workflows.
+- Use configuration files (eg. `.env`) where you store sensitive information and add them to `.gitignore`.
+- For cloud services use secret management tools provided by the cloud provider.
 
 3. **Security Updates:**
 - Regularly review and update dependencies to address security vulnerabilities.
