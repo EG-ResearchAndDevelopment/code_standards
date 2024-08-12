@@ -71,8 +71,9 @@ Test new ideas or features here before merging into `develop`.
 
 3. **Branch Naming Conventions:**
 - Use clear, descriptive names:
-    - `feature/feature-name`
-- Use hyphens to separate words and avoid special characters.
+    - `feature/feature_name`
+- Use underscores to separate words and avoid special characters.
+- Use lowercase names.
 
 ![alt text](screenshots/git_branches.png)
 
