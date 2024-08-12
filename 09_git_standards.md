@@ -177,3 +177,8 @@ The `main` branch should have the highest standards, while the `research` branch
 
 By adhering to these standards, our team can work more effectively, ensure code quality, and maintain a secure development environment.
 For any questions or clarifications, please reach out to the team lead or the designated GitHub administrator.
+
+Read more about GitHub best practices:
+- [Naming conventions for Git Branches — a Cheatsheet](https://medium.com/@abhay.pixolo/naming-conventions-for-git-branches-a-cheatsheet-8549feca2534)
+- [Git Cheat Sheet Education](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git Cheat Sheet All](https://www.geeksforgeeks.org/git-cheat-sheet/)
