@@ -35,7 +35,7 @@ SELECT [SMM] AS smm
       ,[DatumUraCET] AS date_time
       ,[TransfomatorSID] AS tp
   FROM [DW_Star].[dbo].[FactKrivuljeNMC]
-  where TransformatorskaPostajaSID= 419 and DatumVeljavnostiCETID >= '2021-06-01' and DatumVeljavnostiCETID <= '2023-06-01'
+  WHERE TransformatorskaPostajaSID= 419 and DatumVeljavnostiCETID >= '2021-06-01' and DatumVeljavnostiCETID <= '2023-06-01'
 
 #formated for python:
 SELECT
