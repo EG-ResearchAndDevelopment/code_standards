@@ -9,6 +9,8 @@ Download the following tools for your work environment:
 - [Git](https://git-scm.com/downloads) (version control)
 - [Notepad++](https://notepad-plus-plus.org/downloads/) (QOL text editor)
 
+**Don't install just yet!**
+
 ## Available Software on Your Computer
 
 The Software Center includes:
@@ -37,7 +39,7 @@ We use different web applications like:
 ###### Disclaimer: Most likely you will still have to add all the PATH-s into system variables manually! 
 
 
-1. Request administrative access via the user support portal or contact Rok Andolšek/Ares Osrednikar on Microsoft Teams.
+1. Request administrative access via the user support portal or contact Rok Andolšek/ Ares Osrednikar on Microsoft Teams.
 2. Use the username (AD\Workstationadmin) and password during installation when prompted for credentials. If the installation doesn't start, right-click > Run as Administrator.
 ###### If by any chance you do not recieve the question for the admin log in by windows while running an setup you migh have to log into your laptop with the Admin user and password to change some right.
 
@@ -64,9 +66,9 @@ After the installation you have to complete the following steps:
 
 2. Move all the paths to the top as seen on the picture above.
 
-3. Add additional rights to your C:\Programi\anaconda folder (Right-click on the folder > properties > security tab) read/write and change/execute - the ones under full contol
+3. Edit the `C:\Programi\anaconda` folder permissions. Right-click the folder and select properties > security, then click on the "Edit" button. In the new window select the "Users (EGxxxxNB\Users)" group. Finally, allow the following options: Modify, Read & execute, List folder contents, Read, Write.
 
-4. Open C:\Programi\anaconda folder in your vscode and in etc > conda create 'condarc' file which serves as a global configuration file for your computer. Paste the following files into the file:
+4. Open VSCode in `C:\Programi\anaconda\etc\conda`. Create a new file named `condarc` (no file type). It serves as a global configuration file for your computer. Paste the following text into the file and hit save:
 
 ```
 channels:
@@ -82,7 +84,7 @@ pkgs_dirs:
 
 ![condarc sys variable](screenshots/condarc_sys_var.png)
 
-6. Firstly run ```conda init``` in powershell CLI , create test environment with your python version from anaconda```conda create --name test_env python=3.11```, afterward use ```conda activate test_env ``` and check that ```pip install pandas``` in powershell works. 
+6. Firstly run `conda init` in powershell CLI , create test environment with your python version from anaconda`conda create --name test_env python=3.11`, afterward use `conda activate test_env ` and check that `pip install pandas` in powershell works.
 
 ## Git configuration
 
@@ -103,7 +105,7 @@ You need to request permission to connect to the Datawarehouse, which contains a
 
 Blaž Dobravec manages permissions and submits access requests through Einformatik, considering NDA due to GDPR to ensure data is not exported to personal computers.
 
-Open SSMS and connect to the server `SRVEGBIDB01p` with the default user `EGXXXX`. Under databases, find `DW.star`. Access to other databases is restricted. For more information on `DW.star`, see [sql_dwh_basics.md](06_sql_dwh_basics.md).
+Open SSMS and connect to the server `SRVEGBIDB01p` with the default user `EGxxxx`. Under databases, find `DW.star`. Access to other databases is restricted. For more information on `DW.star`, see [sql_dwh_basics.md](06_sql_dwh_basics.md).
 
 ## Python Libraries
 
