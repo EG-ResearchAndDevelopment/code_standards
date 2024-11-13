@@ -3,13 +3,13 @@
 ## Downloads for Your Work Environment
 
 Download the following tools for your work environment:
-- [Python](https://www.python.org/downloads/release/python-3913/), version 3.10 is also acceptable (optional python also comes with Anaconda),
 - [Anaconda](https://www.anaconda.com/download) (Skip email registration, right bottom corner),
 - [VSCode](https://code.visualstudio.com/download) (IDE)
 - [Git](https://git-scm.com/downloads) (version control)
 - [Notepad++](https://notepad-plus-plus.org/downloads/) (QOL text editor)
+- **Optional:** [Python 3.9](https://www.python.org/downloads/release/python-3913/) (or 3.10). We will install python with Anaconda, therefore this one is optional.
 
-**Don't install just yet!**
+**Don't get on installing just yet!**
 
 ## Available Software on Your Computer
 
@@ -40,11 +40,17 @@ We use different web applications like:
 
 
 1. Request administrative access via the user support portal or contact Rok Andolšek/ Ares Osrednikar on Microsoft Teams.
-2. Use the username (AD\Workstationadmin) and password during installation when prompted for credentials. If the installation doesn't start, right-click > Run as Administrator.
+2. Install all programs in `C:\Programi\`.
+3. When prompted, use the username `.\EGWorkstationAdmin` and the password provided by the EG admin.
+4. During the installation process:
+* Attempt to install programs for **all users**. 
+* Select the option **add to path** where it is possible. 
+* **Anaconda** might throw "**Elevation error**" when installing for "all users". In that case select the option "current user".
+<br>**If the installation doesn't start:** Right-click > Run as Administrator.
+
 ###### If by any chance you do not recieve the question for the admin log in by windows while running an setup you migh have to log into your laptop with the Admin user and password to change some right.
 
-3. Install all programs in `C:\Programi\` for anaconda create a folder anaconda `C:\Programi\anaconda` before or during the installation because the installer will say that the folder is not empty, select to install for ALL USERS and check "ADD to path" where it is possible. For Anaconda, you can do the same thing or add the PATH manually later under system variables.
-
+#### During installation:
 
 ![Python Add to Path](screenshots/python_setup.png)
 ![Environment Variables](screenshots/anaconda_install_2.png)
