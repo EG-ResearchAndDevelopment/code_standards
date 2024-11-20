@@ -113,9 +113,32 @@ Blaž Dobravec manages permissions and submits access requests through Einformat
 
 Open SSMS and connect to the server `SRVEGBIDB01p` with the default user `EGxxxx`. Under databases, find `DW.star`. Access to other databases is restricted. For more information on `DW.star`, see [sql_dwh_basics.md](06_sql_dwh_basics.md).
 
-## Python Libraries
+## Installing Python Libraries
 
-The use of `pip install` only works outside the corporate network; otherwise, you will get an SSL error. Therefore, use WiFi.
+**! Keep in mind !** - The use of `conda install` / `pip install` only works outside the corporate network. Otherwise, you will get an SSL error. Therefore, use WiFi.
+
+#### General stepps:
+* Activate desired env `conda activate env-name`
+* Install packages with conda
+* If conda fails install packages with pip
+
+#### Installing with conda
+* `conda install package-name`
+* version specific: `conda install package-name=2` / `conda install package-name=2.3.4`
+* multiple packages: `conda install package-name-a package-b package-c=3.5 ...`
+* from specific channel: `conda install -c conda-forge package-name`
+  
+#### Adding popular channels to conda config. 
+This gives us a wider range of available packages that can be installed with conda.
+* `conda config --add channels conda-forge`
+* `conda config --add channels bioconda`
+* `conda config --add channels anaconda`
+* `conda config --add channels r`
+
+#### Installing with pip
+* `pip install package-name`
+* simmilar to conda pip supports version specific installs
+
 
 ## Github
 
