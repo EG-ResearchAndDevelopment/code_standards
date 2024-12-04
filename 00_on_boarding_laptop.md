@@ -115,7 +115,24 @@ Open SSMS and connect to the server `SRVEGBIDB01p` with the default user `EGxxxx
 
 ## Installing Python Libraries
 
-**! Keep in mind !** - The use of `conda install` / `pip install` only works outside the corporate network. Otherwise, you will get an SSL error. Therefore, use WiFi.
+**! Keep in mind !** - The use of `conda install` / `pip install` only works outside the corporate network. Otherwise, you will get an SSL error. Therefore, use WiFi - or take a look at the next section.
+
+#### Solve SSL error
+
+If you are inside the corporate network, you can solve the SSL error by creating a `pip.ini` file in the `C:\ProgramData\pip\` folder. Add the following text to the file and save it:
+
+    ```
+    [global]
+    trusted-host = pypi.python.org
+                  pypi.org
+                  files.pythonhosted.org
+    ```
+
+and then you can run the `pip install` command in the terminal. If it does not work you can explicitly add the `--trusted-host pypi.org` to the `pip install` command.
+
+```
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org <package-name>
+```
 
 #### General stepps:
 * Activate desired env `conda activate env-name`
