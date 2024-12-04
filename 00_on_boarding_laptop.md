@@ -130,9 +130,12 @@ If you are inside the corporate network, you can solve the SSL error by creating
 
 and then you can run the `pip install` command in the terminal. If it does not work you can explicitly add the `--trusted-host pypi.org` to the `pip install` command.
 
-```
-pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org <package-name>
-```
+  ```
+  pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org <package-name>
+  ```
+
+If you encounter an Error that can not install due to OSError: [Errno 13] Permission denied: 'C:\\Programi\\anaconda\\Lib\\site-packages\\<package-name>' you can run the command in the terminal with the `--user` flag.
+
 
 #### General stepps:
 * Activate desired env `conda activate env-name`
