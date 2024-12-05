@@ -159,6 +159,8 @@ This gives us a wider range of available packages that can be installed with con
 * `pip install package-name`
 * simmilar to conda pip supports version specific installs
 
+#### Certificates in python
+Python DO NOT use sistems default cerificate store. This can lead to some errors when accesing some APIs (for example when accesing e.Point-Scan with requests library in python you get CERTIFICATE_VERIFY_FAILED). To also include default certificates of the machine you can `pip install pip-system-certs`. Using requests library in paython should now work with ex. e.Point-Scan.
 
 ## Github
 
