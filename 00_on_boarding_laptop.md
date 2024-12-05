@@ -119,14 +119,14 @@ Open SSMS and connect to the server `SRVEGBIDB01p` with the default user `EGxxxx
 
 #### Solve SSL error
 
-If you are inside the corporate network, you can solve the SSL error by creating a `pip.ini` file in the `C:\ProgramData\pip\` folder. Add the following text to the file and save it:
+If you are inside the corporate network, you can solve the SSL error by creating a `pip.ini` file in the `C:\ProgramData\pip\` folder (maybe you have to create pip folder). Add the following text to the file and save it:
 
-    ```
-    [global]
-    trusted-host = pypi.python.org
-                  pypi.org
-                  files.pythonhosted.org
-    ```
+  ```
+  [global]
+  trusted-host = pypi.python.org
+                pypi.org
+                files.pythonhosted.org
+  ```
 
 and then you can run the `pip install` command in the terminal. If it does not work you can explicitly add the `--trusted-host pypi.org` to the `pip install` command.
 
@@ -160,7 +160,7 @@ This gives us a wider range of available packages that can be installed with con
 * simmilar to conda pip supports version specific installs
 
 #### Certificates in python
-Python DO NOT use sistems default cerificate store. This can lead to some errors when accesing some APIs (for example when accesing e.Point-Scan with requests library in python you get CERTIFICATE_VERIFY_FAILED). To also include default certificates of the machine you can `pip install pip-system-certs`. Using requests library in paython should now work with ex. e.Point-Scan.
+Python DO NOT use systems default cerificate store. This can lead to some errors when accesing some APIs (for example when accesing e.Point-Scan with requests library in python you get CERTIFICATE_VERIFY_FAILED). To also include default certificates of the machine you can `pip install pip-system-certs`. Using requests library in paython should now work with ex. e.Point-Scan.
 
 ## Github
 
