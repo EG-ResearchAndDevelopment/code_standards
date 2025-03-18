@@ -13,6 +13,8 @@
 | Napetost 2 | u_2 |
 | Napetost 3 | u_3 |
 | Delovna energija | a |
+| Delovna oddaja | a_out |
+| Delovna prejem | a_in |
 | Jalova energija | r |
 | Transformator | tr |
 | TransformatorskaPostaja | tp |
